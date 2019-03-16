@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		303F4891223D02FB0062664F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303F4890223D02FB0062664F /* AppDelegate.swift */; };
+		303F4893223D02FB0062664F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303F4892223D02FB0062664F /* ViewController.swift */; };
+		303F4896223D02FB0062664F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303F4894223D02FB0062664F /* Main.storyboard */; };
+		303F4899223D02FB0062664F /* YunMusic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 303F4897223D02FB0062664F /* YunMusic.xcdatamodeld */; };
+		303F489B223D02FF0062664F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 303F489A223D02FF0062664F /* Assets.xcassets */; };
+		303F489E223D02FF0062664F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303F489C223D02FF0062664F /* LaunchScreen.storyboard */; };
+		303F48A9223D03000062664F /* YunMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303F48A8223D03000062664F /* YunMusicTests.swift */; };
+		303F48B4223D03000062664F /* YunMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303F48B3223D03000062664F /* YunMusicUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		303F48A5223D03000062664F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 303F4885223D02FA0062664F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 303F488C223D02FB0062664F;
+			remoteInfo = YunMusic;
+		};
+		303F48B0223D03000062664F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 303F4885223D02FA0062664F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 303F488C223D02FB0062664F;
+			remoteInfo = YunMusic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		303F488D223D02FB0062664F /* YunMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YunMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		303F4890223D02FB0062664F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		303F4892223D02FB0062664F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		303F4895223D02FB0062664F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		303F4898223D02FB0062664F /* YunMusic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YunMusic.xcdatamodel; sourceTree = "<group>"; };
+		303F489A223D02FF0062664F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		303F489D223D02FF0062664F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		303F489F223D02FF0062664F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		303F48A4223D03000062664F /* YunMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YunMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		303F48A8223D03000062664F /* YunMusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YunMusicTests.swift; sourceTree = "<group>"; };
+		303F48AA223D03000062664F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		303F48AF223D03000062664F /* YunMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YunMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		303F48B3223D03000062664F /* YunMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YunMusicUITests.swift; sourceTree = "<group>"; };
+		303F48B5223D03000062664F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		303F488A223D02FB0062664F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		303F48A1223D03000062664F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		303F48AC223D03000062664F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		303F4884223D02FA0062664F = {
+			isa = PBXGroup;
+			children = (
+				303F488F223D02FB0062664F /* YunMusic */,
+				303F48A7223D03000062664F /* YunMusicTests */,
+				303F48B2223D03000062664F /* YunMusicUITests */,
+				303F488E223D02FB0062664F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		303F488E223D02FB0062664F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				303F488D223D02FB0062664F /* YunMusic.app */,
+				303F48A4223D03000062664F /* YunMusicTests.xctest */,
+				303F48AF223D03000062664F /* YunMusicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		303F488F223D02FB0062664F /* YunMusic */ = {
+			isa = PBXGroup;
+			children = (
+				303F4890223D02FB0062664F /* AppDelegate.swift */,
+				303F4892223D02FB0062664F /* ViewController.swift */,
+				303F4894223D02FB0062664F /* Main.storyboard */,
+				303F489A223D02FF0062664F /* Assets.xcassets */,
+				303F489C223D02FF0062664F /* LaunchScreen.storyboard */,
+				303F489F223D02FF0062664F /* Info.plist */,
+				303F4897223D02FB0062664F /* YunMusic.xcdatamodeld */,
+			);
+			path = YunMusic;
+			sourceTree = "<group>";
+		};
+		303F48A7223D03000062664F /* YunMusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				303F48A8223D03000062664F /* YunMusicTests.swift */,
+				303F48AA223D03000062664F /* Info.plist */,
+			);
+			path = YunMusicTests;
+			sourceTree = "<group>";
+		};
+		303F48B2223D03000062664F /* YunMusicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				303F48B3223D03000062664F /* YunMusicUITests.swift */,
+				303F48B5223D03000062664F /* Info.plist */,
+			);
+			path = YunMusicUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		303F488C223D02FB0062664F /* YunMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 303F48B8223D03000062664F /* Build configuration list for PBXNativeTarget "YunMusic" */;
+			buildPhases = (
+				303F4889223D02FB0062664F /* Sources */,
+				303F488A223D02FB0062664F /* Frameworks */,
+				303F488B223D02FB0062664F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YunMusic;
+			productName = YunMusic;
+			productReference = 303F488D223D02FB0062664F /* YunMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		303F48A3223D03000062664F /* YunMusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 303F48BB223D03000062664F /* Build configuration list for PBXNativeTarget "YunMusicTests" */;
+			buildPhases = (
+				303F48A0223D03000062664F /* Sources */,
+				303F48A1223D03000062664F /* Frameworks */,
+				303F48A2223D03000062664F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				303F48A6223D03000062664F /* PBXTargetDependency */,
+			);
+			name = YunMusicTests;
+			productName = YunMusicTests;
+			productReference = 303F48A4223D03000062664F /* YunMusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		303F48AE223D03000062664F /* YunMusicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 303F48BE223D03000062664F /* Build configuration list for PBXNativeTarget "YunMusicUITests" */;
+			buildPhases = (
+				303F48AB223D03000062664F /* Sources */,
+				303F48AC223D03000062664F /* Frameworks */,
+				303F48AD223D03000062664F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				303F48B1223D03000062664F /* PBXTargetDependency */,
+			);
+			name = YunMusicUITests;
+			productName = YunMusicUITests;
+			productReference = 303F48AF223D03000062664F /* YunMusicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		303F4885223D02FA0062664F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = lighayes;
+				TargetAttributes = {
+					303F488C223D02FB0062664F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					303F48A3223D03000062664F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 303F488C223D02FB0062664F;
+					};
+					303F48AE223D03000062664F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 303F488C223D02FB0062664F;
+					};
+				};
+			};
+			buildConfigurationList = 303F4888223D02FA0062664F /* Build configuration list for PBXProject "YunMusic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 303F4884223D02FA0062664F;
+			productRefGroup = 303F488E223D02FB0062664F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				303F488C223D02FB0062664F /* YunMusic */,
+				303F48A3223D03000062664F /* YunMusicTests */,
+				303F48AE223D03000062664F /* YunMusicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		303F488B223D02FB0062664F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				303F489E223D02FF0062664F /* LaunchScreen.storyboard in Resources */,
+				303F489B223D02FF0062664F /* Assets.xcassets in Resources */,
+				303F4896223D02FB0062664F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		303F48A2223D03000062664F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		303F48AD223D03000062664F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		303F4889223D02FB0062664F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				303F4893223D02FB0062664F /* ViewController.swift in Sources */,
+				303F4899223D02FB0062664F /* YunMusic.xcdatamodeld in Sources */,
+				303F4891223D02FB0062664F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		303F48A0223D03000062664F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				303F48A9223D03000062664F /* YunMusicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		303F48AB223D03000062664F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				303F48B4223D03000062664F /* YunMusicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		303F48A6223D03000062664F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 303F488C223D02FB0062664F /* YunMusic */;
+			targetProxy = 303F48A5223D03000062664F /* PBXContainerItemProxy */;
+		};
+		303F48B1223D03000062664F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 303F488C223D02FB0062664F /* YunMusic */;
+			targetProxy = 303F48B0223D03000062664F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		303F4894223D02FB0062664F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				303F4895223D02FB0062664F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		303F489C223D02FF0062664F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				303F489D223D02FF0062664F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		303F48B6223D03000062664F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		303F48B7223D03000062664F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		303F48B9223D03000062664F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YunMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.1.YunMusic";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		303F48BA223D03000062664F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YunMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.1.YunMusic";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		303F48BC223D03000062664F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YunMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.1.YunMusicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YunMusic.app/YunMusic";
+			};
+			name = Debug;
+		};
+		303F48BD223D03000062664F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YunMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.1.YunMusicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YunMusic.app/YunMusic";
+			};
+			name = Release;
+		};
+		303F48BF223D03000062664F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YunMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.1.YunMusicUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YunMusic;
+			};
+			name = Debug;
+		};
+		303F48C0223D03000062664F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YunMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.1.YunMusicUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YunMusic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		303F4888223D02FA0062664F /* Build configuration list for PBXProject "YunMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				303F48B6223D03000062664F /* Debug */,
+				303F48B7223D03000062664F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		303F48B8223D03000062664F /* Build configuration list for PBXNativeTarget "YunMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				303F48B9223D03000062664F /* Debug */,
+				303F48BA223D03000062664F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		303F48BB223D03000062664F /* Build configuration list for PBXNativeTarget "YunMusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				303F48BC223D03000062664F /* Debug */,
+				303F48BD223D03000062664F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		303F48BE223D03000062664F /* Build configuration list for PBXNativeTarget "YunMusicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				303F48BF223D03000062664F /* Debug */,
+				303F48C0223D03000062664F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		303F4897223D02FB0062664F /* YunMusic.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				303F4898223D02FB0062664F /* YunMusic.xcdatamodel */,
+			);
+			currentVersion = 303F4898223D02FB0062664F /* YunMusic.xcdatamodel */;
+			path = YunMusic.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 303F4885223D02FA0062664F /* Project object */;
+}
