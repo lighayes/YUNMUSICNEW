@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +18,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        return true
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        self.window?.backgroundColor=UIColor.white
+        let viewController = ViewController()
+        let navBar=UINavigationController(rootViewController: viewController)
+        // UINavigationBar.appearance().backgroundColor=UIColor.tintGray
+        navBar.navigationBar.barTintColor=UIColor.tintDark
+        self.window?.rootViewController = navBar
+        
+   
+        let session = AVAudioSession.sharedInstance()
+        do {
+            try session.setActive(true)
+//            try session.setCategory(AVAudioSession.Category.playback)
+            try session.setCategory(.playback, mode: .default, options: [])
+        } catch {
+            print(error)
+        }
+       return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
