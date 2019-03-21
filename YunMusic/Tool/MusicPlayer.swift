@@ -65,6 +65,10 @@ final class MusicPlayer: NSObject {
         return self.translate(inBox: (instance?.currentTime)!)
     }
     
+    static func doubleCurrentTime()->Double{
+        return (instance?.currentTime)!
+    }
+    
     static func doubleDuration()->Double{
         return (instance?.duration)!
     }

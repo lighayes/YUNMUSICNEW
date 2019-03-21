@@ -15,7 +15,7 @@ class MusicTableView: UITableView,UITableViewDelegate,UITableViewDataSource,back
     
     var musicTable:[String]=["111","goodday","win","haoyunlai"]
     var singerTable:[String]=["a","bbbbbbb.bbb","dkjfskdjf","jiaozijie"]
-    var musicArry:Array<Music>?
+    var musicArry:Array<Music> = Music.getMusic()
     var isPlaying:Int?
     
     func backToTable(number: Int) {
@@ -24,7 +24,7 @@ class MusicTableView: UITableView,UITableViewDelegate,UITableViewDataSource,back
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (musicArry?.count)!
+        return (musicArry.count)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -33,9 +33,9 @@ class MusicTableView: UITableView,UITableViewDelegate,UITableViewDataSource,back
 //        cell.songName.text=musicTable[indexPath.row]
 //        cell.number.text="\(indexPath.row)"
 //        cell.singerName.text=singerTable[indexPath.row]
-        cell.songName.text=musicArry?[indexPath.row].song
+        cell.songName.text=musicArry[indexPath.row].song
         cell.number.text="\(indexPath.row)"
-        cell.singerName.text=musicArry?[indexPath.row].singer
+        cell.singerName.text=musicArry[indexPath.row].singer
         cell.selectedBackgroundView = UIView(frame: cell.bounds)
         cell.selectedBackgroundView?.layer.borderColor = UIColor.rose.cgColor
         cell.selectedBackgroundView?.layer.borderWidth = 7
@@ -73,7 +73,7 @@ class MusicTableView: UITableView,UITableViewDelegate,UITableViewDataSource,back
     }
     
     func setUp()
-    {   musicArry=Music.getMusic()
+    {   //musicArry=Music.getMusic()
        self.register(MusicTableViewCell.self, forCellReuseIdentifier: "MusicTableViewCell")
         self.delegate=self
         self.dataSource=self

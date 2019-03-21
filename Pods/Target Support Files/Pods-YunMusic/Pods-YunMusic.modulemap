@@ -1,0 +1,6 @@
+framework module Pods_YunMusic {
+  umbrella header "Pods-YunMusic-umbrella.h"
+
+  export *
+  module * { export * }
+}

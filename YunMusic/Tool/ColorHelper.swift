@@ -14,37 +14,7 @@ extension UIColor {
     public convenience init(red:UInt8, green:UInt8, blue:UInt8 ) {
         self.init(red: CGFloat(red)/255, green: CGFloat(green)/255, blue: CGFloat(blue)/255, alpha: 1)
     }
-    
-    convenience init(bgrHex: UInt32) {
-        let b = CGFloat((bgrHex & 0xFF0000) >> 16) / 255.0
-        let g = CGFloat((bgrHex & 0x00FF00) >> 8) / 255.0
-        let r = CGFloat((bgrHex & 0x0000FF) ) / 255.0
-        self.init(red: r, green: g, blue: b, alpha: 1)
-    }
-    
-    
-    public convenience init(assHex:String) {
-        let hexString:String
-        if assHex.starts(with: "#") {
-            hexString = String(assHex[assHex.index(after: assHex.startIndex) ..< assHex.endIndex])
-        } else {
-            hexString = assHex
-        }
-        var hexValue:UInt32 = 0
-        Scanner(string: hexString).scanHexInt32(&hexValue)
-        self.init(bgrHex: hexValue)
-    }
-    
-    public var hexForASS:String {
-        let red = UnsafeMutablePointer<CGFloat>.allocate(capacity: 1)
-        let green = UnsafeMutablePointer<CGFloat>.allocate(capacity: 1)
-        let blue = UnsafeMutablePointer<CGFloat>.allocate(capacity: 1)
-        getRed(red, green: green, blue: blue, alpha: nil)
-        let redValue = Int(red.pointee * 255)
-        let greenValue = Int(green.pointee * 255)
-        let blueValue = Int(green.pointee * 255)
-        return String(format: "&H00%02x%02x%02x", blueValue, greenValue, redValue).uppercased()
-    }
+
     
     static var tintGreen:UIColor {
         return UIColor(red: 141, green: 248, blue: 159)

@@ -11,6 +11,7 @@ import SnapKit
 import AVFoundation
 import CoreGraphics
 import MediaPlayer
+import CoreData
 
 extension UIButton{//一个小扩展，实现图片契合按钮大小
     func imgFitBtn(){
@@ -85,13 +86,14 @@ class PlayViewController: ZViewController,AVAudioPlayerDelegate {
     func setUp(){
 //        nowMusicArry = Music.getMusic()
         showBlurEffect()
+        getCoreData()
         self.navigationItem.title = nowMusicArry[nowNum].song
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         if isPlaying {
             self.createAudioPlayer()
         
         }else{
-            setTime()
+            
             if !PlayViewController.playOrPause{
                 addBangAnim()
                 anim?.toValue = -M_PI/6
@@ -100,8 +102,9 @@ class PlayViewController: ZViewController,AVAudioPlayerDelegate {
                 cdImageView.layer.pauseAnim()
                 
             }
+            
         }
-        
+        setTime()
     }
     
     func showBlurEffect() {
@@ -133,7 +136,7 @@ class PlayViewController: ZViewController,AVAudioPlayerDelegate {
     func createAudioPlayer(){
         if MusicPlayer.create(model: nowMusicArry[nowNum]) {
             print("play")
-            setTime()
+            //setTime()
             setLikeBtnImage()
             imageView1.image = UIImage(contentsOfFile: nowMusicArry[nowNum].musicIMG!)
              cdTrueImageView.image = UIImage(contentsOfFile: nowMusicArry[nowNum].musicIMG!)
@@ -331,16 +334,119 @@ class PlayViewController: ZViewController,AVAudioPlayerDelegate {
     }
     
     @objc func likePre(btn:UIButton){
+        
+        
         if PlayViewController.isLike[nowNum] == 1 {
             PlayViewController.isLike[nowNum] = 0
-            
+            deleteNumFromCore()
         }
         else{
             PlayViewController.isLike[nowNum] = 1
+            saveNumToCore()
+            }
+        
+
+        setLikeBtnImage()
+        let appDelegate = UIApplication.shared.delegate as!AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "MusicNumber")
+        //fetchRequest.predicate = NSPredicate(format: "num = \(nowNum)","" )
+        let asyncFetchRequest = NSAsynchronousFetchRequest(fetchRequest: fetchRequest) {
+            (result:NSAsynchronousFetchResult!) in
+            let fetchObject = result.finalResult! as! [MusicNumber]
+            for i in fetchObject{
+                print("\(i.num)")
+                print("\n")
+            }
         }
+        do {
+            try context.execute(asyncFetchRequest)
+        }catch {
+            print("error")
+        }
+        
+    }
+    //以下为coredata操作的函数
+    func getCoreData(){
+        let appDelegate = UIApplication.shared.delegate as!AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "MusicNumber")
+        //fetchRequest.predicate = NSPredicate(format: "num = \(nowNum)","" )
+        let asyncFetchRequest = NSAsynchronousFetchRequest(fetchRequest: fetchRequest) {
+            (result:NSAsynchronousFetchResult!) in
+            let fetchObject = result.finalResult! as! [MusicNumber]
+            for i in fetchObject{
+                let temp = Int(i.num - 1)
+                if  temp >= 0{
+                PlayViewController.isLike[temp] = 1
+                }
+            }
+        }
+        do {
+            try context.execute(asyncFetchRequest)
+        }catch {
+            print("error")
+        }
+    }
+    //备用方法
+    //用于删除核心数据
+    //放进去运行一遍即可
+    func deleteAll(){
+        let appDelegate = UIApplication.shared.delegate as!AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "MusicNumber")
+        //fetchRequest.predicate = NSPredicate(format: "num = \(nowNum)","" )
+        let asyncFetchRequest = NSAsynchronousFetchRequest(fetchRequest: fetchRequest) {
+            (result:NSAsynchronousFetchResult!) in
+            let fetchObject = result.finalResult! as! [MusicNumber]
+            for i in fetchObject{
+                context.delete(i)
+            }
+        }
+        do {
+            try context.execute(asyncFetchRequest)
+        }catch {
+            print("error")
+        }
+    }
+    
+    func saveNumToCore(){
+        //注意注意！！nowNum要记得加一
+        //由于未知原因
+        //删除数据后会变为0一段时间
+        //所以舍0
+        let appDelegate = UIApplication.shared.delegate as!AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let Entity = NSEntityDescription.entity(forEntityName: "MusicNumber", in: context)
+        let classEntity = NSManagedObject(entity: Entity!, insertInto: context)
+        classEntity.setValue(nowNum+1, forKey: "num")
+        do{
+            try context.save()
+        }catch{
+            let nserror = error as NSError
+            fatalError("error:\(nserror),\(nserror.userInfo)")
+        }
+    }
 
         
-        setLikeBtnImage()
+    func deleteNumFromCore(){
+        let appDelegate = UIApplication.shared.delegate as!AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "MusicNumber")
+        fetchRequest.predicate = NSPredicate(format: "num = \(nowNum+1)","" )
+        let asyncFetchRequest = NSAsynchronousFetchRequest(fetchRequest: fetchRequest) {
+            (result:NSAsynchronousFetchResult!) in
+            let fetchObject = result.finalResult! as! [MusicNumber]
+            for i in fetchObject{
+                context.delete(i)
+                appDelegate.saveContext()
+            }
+        }
+        do {
+            try context.execute(asyncFetchRequest)
+        }catch {
+            print("error")
+        }
     }
     
     @objc func sliderValueChange(){
@@ -591,6 +697,9 @@ class PlayViewController: ZViewController,AVAudioPlayerDelegate {
     
     @objc override func back() {
         self.delegate?.backToTable(number: nowNum)
+        time?.invalidate()
+        time = nil
+        //time? = nil
         self.navigationController?.popViewController(animated: true)
     }
 }
@@ -603,14 +712,14 @@ extension PlayViewController {
             case .remoteControlTogglePlayPause:
                 //self.play(btn: playBtn)
                 print("play???")
-            case .remoteControlPreviousTrack: // ##  <-  ##
+            case .remoteControlPreviousTrack:
                 self.preSong()
-            case .remoteControlNextTrack: // ## -> ##
+            case .remoteControlNextTrack:
                self.nextSong()
-            case .remoteControlPlay: // ## > ##
+            case .remoteControlPlay:
                 self.play(btn: playBtn)
-                setBackground(playBack: 1)
-            case .remoteControlPause: // ## || ##
+//                setBackground(playBack: 1)
+            case .remoteControlPause: 
                 self.play(btn: playBtn)
                 setBackground(playBack: 0)
             default:
@@ -622,8 +731,8 @@ extension PlayViewController {
         
         let settings = [MPMediaItemPropertyTitle: nowMusicArry[nowNum].song as Any,
                         MPMediaItemPropertyArtist: nowMusicArry[nowNum].singer as Any,
-                        MPMediaItemPropertyPlaybackDuration: "\(MusicPlayer.duration())",
-            MPNowPlayingInfoPropertyElapsedPlaybackTime: "\(MusicPlayer.currentTime)",
+                        MPMediaItemPropertyPlaybackDuration: MusicPlayer.doubleDuration(),
+                        MPNowPlayingInfoPropertyElapsedPlaybackTime: MusicPlayer.doubleCurrentTime(),
             MPMediaItemPropertyArtwork: MPMediaItemArtwork(image: UIImage(contentsOfFile: nowMusicArry[nowNum].musicIMG!)!),
             MPNowPlayingInfoPropertyPlaybackRate:playBack] as [String : Any]
         

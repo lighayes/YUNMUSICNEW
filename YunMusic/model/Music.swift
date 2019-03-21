@@ -16,6 +16,7 @@ class Music:NSObject{
     var musicURL:URL?
     var musicIMG:String?
     var musicNum:Int?
+    var row:Int?
     //var songLyrics:
     
     

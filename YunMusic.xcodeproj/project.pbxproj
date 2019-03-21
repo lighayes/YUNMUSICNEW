@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		301B08B5223E0F4800F3248A /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301B08B4223E0F4800F3248A /* Music.swift */; };
+		301B08B7223E49ED00F3248A /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301B08B6223E49ED00F3248A /* MusicPlayer.swift */; };
+		301BB956223F52CD0004A882 /* 陈百强-无声胜有声.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 301BB94C223F52C60004A882 /* 陈百强-无声胜有声.mp3 */; };
+		301BB957223F52CD0004A882 /* 陈慧娴-千千阙歌.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 301BB94D223F52C70004A882 /* 陈慧娴-千千阙歌.mp3 */; };
+		301BB958223F52CD0004A882 /* 陈奕迅-富士山下.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 301BB94E223F52C80004A882 /* 陈奕迅-富士山下.mp3 */; };
+		301BB959223F52CD0004A882 /* 草蜢-宝贝对不起.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 301BB94F223F52C80004A882 /* 草蜢-宝贝对不起.mp3 */; };
+		301BB95A223F52CD0004A882 /* 陈百强-相思河畔.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 301BB950223F52C90004A882 /* 陈百强-相思河畔.mp3 */; };
+		301BB95C223F52CD0004A882 /* 陈百强-冷暖风铃.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 301BB952223F52CA0004A882 /* 陈百强-冷暖风铃.mp3 */; };
+		301BB95D223F52CD0004A882 /* 陈奕迅-好久不见.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 301BB953223F52CB0004A882 /* 陈奕迅-好久不见.mp3 */; };
+		301BB95E223F52CD0004A882 /* 阿细-粒粒皆辛苦.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 301BB954223F52CC0004A882 /* 阿细-粒粒皆辛苦.mp3 */; };
+		301BB95F223F52CD0004A882 /* 陈百强-令我倾心只有你.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 301BB955223F52CD0004A882 /* 陈百强-令我倾心只有你.mp3 */; };
 		303F4891223D02FB0062664F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303F4890223D02FB0062664F /* AppDelegate.swift */; };
 		303F4893223D02FB0062664F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303F4892223D02FB0062664F /* ViewController.swift */; };
 		303F4896223D02FB0062664F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303F4894223D02FB0062664F /* Main.storyboard */; };
@@ -15,6 +26,23 @@
 		303F489E223D02FF0062664F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303F489C223D02FF0062664F /* LaunchScreen.storyboard */; };
 		303F48A9223D03000062664F /* YunMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303F48A8223D03000062664F /* YunMusicTests.swift */; };
 		303F48B4223D03000062664F /* YunMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303F48B3223D03000062664F /* YunMusicUITests.swift */; };
+		303F48C2223D06ED0062664F /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303F48C1223D06ED0062664F /* ColorHelper.swift */; };
+		303F48C4223D092E0062664F /* ZViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303F48C3223D092E0062664F /* ZViewController.swift */; };
+		303F48C8223D0D1B0062664F /* MusicTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303F48C7223D0D1B0062664F /* MusicTableView.swift */; };
+		303F48CA223D11570062664F /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303F48C9223D11570062664F /* MusicTableViewCell.swift */; };
+		303F48CC223D2B980062664F /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303F48CB223D2B980062664F /* PlayViewController.swift */; };
+		304B0B3922426F17004C6A14 /* LikeListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B0B3822426F17004C6A14 /* LikeListTableView.swift */; };
+		305079A82240FFC10028075E /* LikeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305079A72240FFC10028075E /* LikeListViewController.swift */; };
+		305079FF22411E4B0028075E /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 305079F622411E4A0028075E /* 3.jpg */; };
+		30507A0022411E4B0028075E /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 305079F722411E4A0028075E /* 1.jpg */; };
+		30507A0122411E4B0028075E /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 305079F822411E4A0028075E /* 0.jpg */; };
+		30507A0222411E4B0028075E /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 305079F922411E4A0028075E /* 7.jpg */; };
+		30507A0322411E4B0028075E /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 305079FA22411E4A0028075E /* 8.jpg */; };
+		30507A0422411E4B0028075E /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 305079FB22411E4B0028075E /* 4.jpg */; };
+		30507A0522411E4B0028075E /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 305079FC22411E4B0028075E /* 6.jpg */; };
+		30507A0622411E4B0028075E /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 305079FD22411E4B0028075E /* 2.jpg */; };
+		30507A0722411E4B0028075E /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 305079FE22411E4B0028075E /* 5.jpg */; };
+		60D8121FB935D7E66124BCF7 /* Pods_YunMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 030F054DBC934A34ADFF55CD /* Pods_YunMusic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +63,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		030F054DBC934A34ADFF55CD /* Pods_YunMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YunMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DF4DA620858FC923D61B7AA /* Pods-YunMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YunMusic.release.xcconfig"; path = "Pods/Target Support Files/Pods-YunMusic/Pods-YunMusic.release.xcconfig"; sourceTree = "<group>"; };
+		301B08B4223E0F4800F3248A /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		301B08B6223E49ED00F3248A /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
+		301BB94C223F52C60004A882 /* 陈百强-无声胜有声.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "陈百强-无声胜有声.mp3"; sourceTree = "<group>"; };
+		301BB94D223F52C70004A882 /* 陈慧娴-千千阙歌.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "陈慧娴-千千阙歌.mp3"; sourceTree = "<group>"; };
+		301BB94E223F52C80004A882 /* 陈奕迅-富士山下.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "陈奕迅-富士山下.mp3"; sourceTree = "<group>"; };
+		301BB94F223F52C80004A882 /* 草蜢-宝贝对不起.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "草蜢-宝贝对不起.mp3"; sourceTree = "<group>"; };
+		301BB950223F52C90004A882 /* 陈百强-相思河畔.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "陈百强-相思河畔.mp3"; sourceTree = "<group>"; };
+		301BB952223F52CA0004A882 /* 陈百强-冷暖风铃.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "陈百强-冷暖风铃.mp3"; sourceTree = "<group>"; };
+		301BB953223F52CB0004A882 /* 陈奕迅-好久不见.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "陈奕迅-好久不见.mp3"; sourceTree = "<group>"; };
+		301BB954223F52CC0004A882 /* 阿细-粒粒皆辛苦.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "阿细-粒粒皆辛苦.mp3"; sourceTree = "<group>"; };
+		301BB955223F52CD0004A882 /* 陈百强-令我倾心只有你.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "陈百强-令我倾心只有你.mp3"; sourceTree = "<group>"; };
 		303F488D223D02FB0062664F /* YunMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YunMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		303F4890223D02FB0062664F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		303F4892223D02FB0062664F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +90,23 @@
 		303F48AF223D03000062664F /* YunMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YunMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		303F48B3223D03000062664F /* YunMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YunMusicUITests.swift; sourceTree = "<group>"; };
 		303F48B5223D03000062664F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		303F48C1223D06ED0062664F /* ColorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
+		303F48C3223D092E0062664F /* ZViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZViewController.swift; sourceTree = "<group>"; };
+		303F48C7223D0D1B0062664F /* MusicTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableView.swift; sourceTree = "<group>"; };
+		303F48C9223D11570062664F /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		303F48CB223D2B980062664F /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		304B0B3822426F17004C6A14 /* LikeListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeListTableView.swift; sourceTree = "<group>"; };
+		305079A72240FFC10028075E /* LikeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeListViewController.swift; sourceTree = "<group>"; };
+		305079F622411E4A0028075E /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpg; path = "YunMusic/未命名文件夹/3.jpg"; sourceTree = SOURCE_ROOT; };
+		305079F722411E4A0028075E /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = "YunMusic/未命名文件夹/1.jpg"; sourceTree = SOURCE_ROOT; };
+		305079F822411E4A0028075E /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 0.jpg; path = "YunMusic/未命名文件夹/0.jpg"; sourceTree = SOURCE_ROOT; };
+		305079F922411E4A0028075E /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 7.jpg; path = "YunMusic/未命名文件夹/7.jpg"; sourceTree = SOURCE_ROOT; };
+		305079FA22411E4A0028075E /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 8.jpg; path = "YunMusic/未命名文件夹/8.jpg"; sourceTree = SOURCE_ROOT; };
+		305079FB22411E4B0028075E /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 4.jpg; path = "YunMusic/未命名文件夹/4.jpg"; sourceTree = SOURCE_ROOT; };
+		305079FC22411E4B0028075E /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 6.jpg; path = "YunMusic/未命名文件夹/6.jpg"; sourceTree = SOURCE_ROOT; };
+		305079FD22411E4B0028075E /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = "YunMusic/未命名文件夹/2.jpg"; sourceTree = SOURCE_ROOT; };
+		305079FE22411E4B0028075E /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 5.jpg; path = "YunMusic/未命名文件夹/5.jpg"; sourceTree = SOURCE_ROOT; };
+		7D795484D124A7451DBF9520 /* Pods-YunMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YunMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YunMusic/Pods-YunMusic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60D8121FB935D7E66124BCF7 /* Pods_YunMusic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +135,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		301BB94B223F52720004A882 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				305079F822411E4A0028075E /* 0.jpg */,
+				305079F722411E4A0028075E /* 1.jpg */,
+				305079FD22411E4B0028075E /* 2.jpg */,
+				305079F622411E4A0028075E /* 3.jpg */,
+				305079FB22411E4B0028075E /* 4.jpg */,
+				305079FE22411E4B0028075E /* 5.jpg */,
+				305079FC22411E4B0028075E /* 6.jpg */,
+				305079F922411E4A0028075E /* 7.jpg */,
+				305079FA22411E4A0028075E /* 8.jpg */,
+				301BB954223F52CC0004A882 /* 阿细-粒粒皆辛苦.mp3 */,
+				301BB94F223F52C80004A882 /* 草蜢-宝贝对不起.mp3 */,
+				301BB952223F52CA0004A882 /* 陈百强-冷暖风铃.mp3 */,
+				301BB955223F52CD0004A882 /* 陈百强-令我倾心只有你.mp3 */,
+				301BB94C223F52C60004A882 /* 陈百强-无声胜有声.mp3 */,
+				301BB950223F52C90004A882 /* 陈百强-相思河畔.mp3 */,
+				301BB94D223F52C70004A882 /* 陈慧娴-千千阙歌.mp3 */,
+				301BB94E223F52C80004A882 /* 陈奕迅-富士山下.mp3 */,
+				301BB953223F52CB0004A882 /* 陈奕迅-好久不见.mp3 */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		301CBC3322431F6300C1A269 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				301B08B4223E0F4800F3248A /* Music.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		303F4884223D02FA0062664F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +175,9 @@
 				303F48A7223D03000062664F /* YunMusicTests */,
 				303F48B2223D03000062664F /* YunMusicUITests */,
 				303F488E223D02FB0062664F /* Products */,
+				914EC1D0EB5452ADFB4D8DD1 /* Pods */,
+				F1ACCA242E15D18E7F68E456 /* Frameworks */,
+				305079DF22411BDA0028075E /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +194,14 @@
 		303F488F223D02FB0062664F /* YunMusic */ = {
 			isa = PBXGroup;
 			children = (
-				303F4890223D02FB0062664F /* AppDelegate.swift */,
-				303F4892223D02FB0062664F /* ViewController.swift */,
+				304B0B3F22427DCE004C6A14 /* Tool */,
+				301CBC3322431F6300C1A269 /* model */,
+				304B0B3E22427DBC004C6A14 /* LikeView */,
+				304B0B3C22427D9B004C6A14 /* MainView */,
+				304B0B3A22427D81004C6A14 /* PlayView */,
 				303F4894223D02FB0062664F /* Main.storyboard */,
 				303F489A223D02FF0062664F /* Assets.xcassets */,
+				301BB94B223F52720004A882 /* resource */,
 				303F489C223D02FF0062664F /* LaunchScreen.storyboard */,
 				303F489F223D02FF0062664F /* Info.plist */,
 				303F4897223D02FB0062664F /* YunMusic.xcdatamodeld */,
@@ -128,6 +227,69 @@
 			path = YunMusicUITests;
 			sourceTree = "<group>";
 		};
+		304B0B3A22427D81004C6A14 /* PlayView */ = {
+			isa = PBXGroup;
+			children = (
+				303F48CB223D2B980062664F /* PlayViewController.swift */,
+			);
+			name = PlayView;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		304B0B3C22427D9B004C6A14 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				303F4890223D02FB0062664F /* AppDelegate.swift */,
+				303F48C7223D0D1B0062664F /* MusicTableView.swift */,
+				303F48C9223D11570062664F /* MusicTableViewCell.swift */,
+				303F48C3223D092E0062664F /* ZViewController.swift */,
+				303F4892223D02FB0062664F /* ViewController.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		304B0B3E22427DBC004C6A14 /* LikeView */ = {
+			isa = PBXGroup;
+			children = (
+				305079A72240FFC10028075E /* LikeListViewController.swift */,
+				304B0B3822426F17004C6A14 /* LikeListTableView.swift */,
+			);
+			path = LikeView;
+			sourceTree = "<group>";
+		};
+		304B0B3F22427DCE004C6A14 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				303F48C1223D06ED0062664F /* ColorHelper.swift */,
+				301B08B6223E49ED00F3248A /* MusicPlayer.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		305079DF22411BDA0028075E /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		914EC1D0EB5452ADFB4D8DD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D795484D124A7451DBF9520 /* Pods-YunMusic.debug.xcconfig */,
+				0DF4DA620858FC923D61B7AA /* Pods-YunMusic.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F1ACCA242E15D18E7F68E456 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				030F054DBC934A34ADFF55CD /* Pods_YunMusic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +297,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 303F48B8223D03000062664F /* Build configuration list for PBXNativeTarget "YunMusic" */;
 			buildPhases = (
+				B95667FAC9C83BA40C9D1605 /* [CP] Check Pods Manifest.lock */,
 				303F4889223D02FB0062664F /* Sources */,
 				303F488A223D02FB0062664F /* Frameworks */,
 				303F488B223D02FB0062664F /* Resources */,
+				1C6F8350AC816C4A895C090C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +360,11 @@
 				TargetAttributes = {
 					303F488C223D02FB0062664F = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					303F48A3223D03000062664F = {
 						CreatedOnToolsVersion = 10.1;
@@ -232,9 +401,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30507A0622411E4B0028075E /* 2.jpg in Resources */,
+				30507A0522411E4B0028075E /* 6.jpg in Resources */,
+				30507A0322411E4B0028075E /* 8.jpg in Resources */,
+				305079FF22411E4B0028075E /* 3.jpg in Resources */,
+				30507A0222411E4B0028075E /* 7.jpg in Resources */,
+				301BB959223F52CD0004A882 /* 草蜢-宝贝对不起.mp3 in Resources */,
+				301BB958223F52CD0004A882 /* 陈奕迅-富士山下.mp3 in Resources */,
+				30507A0122411E4B0028075E /* 0.jpg in Resources */,
+				301BB95C223F52CD0004A882 /* 陈百强-冷暖风铃.mp3 in Resources */,
+				301BB95F223F52CD0004A882 /* 陈百强-令我倾心只有你.mp3 in Resources */,
+				30507A0422411E4B0028075E /* 4.jpg in Resources */,
+				30507A0022411E4B0028075E /* 1.jpg in Resources */,
+				301BB95D223F52CD0004A882 /* 陈奕迅-好久不见.mp3 in Resources */,
 				303F489E223D02FF0062664F /* LaunchScreen.storyboard in Resources */,
+				301BB95A223F52CD0004A882 /* 陈百强-相思河畔.mp3 in Resources */,
+				301BB957223F52CD0004A882 /* 陈慧娴-千千阙歌.mp3 in Resources */,
+				301BB956223F52CD0004A882 /* 陈百强-无声胜有声.mp3 in Resources */,
+				30507A0722411E4B0028075E /* 5.jpg in Resources */,
 				303F489B223D02FF0062664F /* Assets.xcassets in Resources */,
 				303F4896223D02FB0062664F /* Main.storyboard in Resources */,
+				301BB95E223F52CD0004A882 /* 阿细-粒粒皆辛苦.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +441,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C6F8350AC816C4A895C090C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YunMusic/Pods-YunMusic-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YunMusic/Pods-YunMusic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B95667FAC9C83BA40C9D1605 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YunMusic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		303F4889223D02FB0062664F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				301B08B7223E49ED00F3248A /* MusicPlayer.swift in Sources */,
 				303F4893223D02FB0062664F /* ViewController.swift in Sources */,
+				303F48CC223D2B980062664F /* PlayViewController.swift in Sources */,
+				305079A82240FFC10028075E /* LikeListViewController.swift in Sources */,
 				303F4899223D02FB0062664F /* YunMusic.xcdatamodeld in Sources */,
+				303F48C8223D0D1B0062664F /* MusicTableView.swift in Sources */,
 				303F4891223D02FB0062664F /* AppDelegate.swift in Sources */,
+				303F48C2223D06ED0062664F /* ColorHelper.swift in Sources */,
+				303F48C4223D092E0062664F /* ZViewController.swift in Sources */,
+				301B08B5223E0F4800F3248A /* Music.swift in Sources */,
+				304B0B3922426F17004C6A14 /* LikeListTableView.swift in Sources */,
+				303F48CA223D11570062664F /* MusicTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,9 +677,12 @@
 		};
 		303F48B9223D03000062664F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D795484D124A7451DBF9520 /* Pods-YunMusic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WDYZFJ25J7;
 				INFOPLIST_FILE = YunMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -444,6 +690,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.1.YunMusic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,9 +698,12 @@
 		};
 		303F48BA223D03000062664F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DF4DA620858FC923D61B7AA /* Pods-YunMusic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WDYZFJ25J7;
 				INFOPLIST_FILE = YunMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -461,6 +711,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.1.YunMusic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
